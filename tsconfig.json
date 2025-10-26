@@ -1,0 +1,10 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "strict": false,
+    "skipLibCheck": true
+  },
+  "vueCompilerOptions": {
+    "skipTemplateCodegen": false
+  }
+}
