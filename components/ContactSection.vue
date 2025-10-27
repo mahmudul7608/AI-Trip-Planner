@@ -73,7 +73,7 @@
             <!-- Submit Button -->
             <button
               type="submit"
-              class="w-full py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-xl shadow-lg shadow-cyan-500/30 hover:shadow-xl hover:shadow-cyan-500/50 transition-all duration-300 transform hover:scale-105"
+              class="w-full py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105"
             >
               Send Message
             </button>
@@ -91,11 +91,10 @@
           >
             <div class="flex items-start gap-4">
               <div
-                class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300"
+                class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 text-white"
                 :class="contact.gradientClass"
-              >
-                <span class="text-2xl">{{ contact.icon }}</span>
-              </div>
+                v-html="contact.svg"
+              ></div>
               <div>
                 <h4 class="text-lg font-bold text-white mb-2">
                   {{ contact.title }}
@@ -147,21 +146,21 @@ const form = ref({
 const contactInfo = ref([
   {
     title: "Email Us",
-    icon: "✉️",
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>',
     lines: ["support@aitripplanner.com", "info@aitripplanner.com"],
     gradientClass: "bg-gradient-to-br from-cyan-400 to-blue-600",
     hoverClass: "hover:border-cyan-400/50",
   },
   {
     title: "Call Us",
-    icon: "📞",
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>',
     lines: ["+1 (555) 123-4567", "Mon-Fri 9am to 6pm EST"],
     gradientClass: "bg-gradient-to-br from-purple-400 to-pink-600",
     hoverClass: "hover:border-purple-400/50",
   },
   {
     title: "Visit Us",
-    icon: "📍",
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>',
     lines: ["123 Travel Street", "San Francisco, CA 94102, USA"],
     gradientClass: "bg-gradient-to-br from-green-400 to-emerald-600",
     hoverClass: "hover:border-green-400/50",

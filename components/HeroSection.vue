@@ -67,7 +67,7 @@
             <div class="flex items-center justify-center lg:justify-start pt-2">
               <NuxtLink to="/plan-trip">
                 <button
-                  class="group px-7 sm:px-9 py-3 sm:py-3.5 bg-gradient-to-r from-cyan-500 via-cyan-600 to-blue-600 hover:from-cyan-400 hover:via-cyan-500 hover:to-blue-500 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 text-sm sm:text-base flex items-center gap-2"
+                  class="group px-5 sm:px-7 py-2.5 sm:py-3 bg-gradient-to-r from-cyan-500 via-cyan-600 to-blue-600 hover:from-cyan-400 hover:via-cyan-500 hover:to-blue-500 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 text-sm sm:text-base flex items-center gap-2"
                 >
                   <span>Start Planning Now</span>
                   <svg
