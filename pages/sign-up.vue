@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-screen bg-gradient-to-br from-[#0a0820] via-[#1a1040] to-[#0f0a30] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden"
+    class="h-screen bg-gradient-to-br from-[#1a1f3a] via-[#2d3561] to-[#1e2542] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden"
   >
     <!-- Animated Starry Background -->
     <div class="absolute inset-0 stars-container">
