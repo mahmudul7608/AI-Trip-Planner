@@ -38,19 +38,75 @@
           >
             Statistics
           </button>
-          <NuxtLink to="/plan-trip">
-            <button
-              class="text-gray-300 hover:text-cyan-400 font-semibold transition-colors"
-            >
-              Generate
-            </button>
-          </NuxtLink>
           <button
-            @click="scrollToSection('about')"
+            @click="scrollToSection('ai-trip-builder')"
             class="text-gray-300 hover:text-cyan-400 font-semibold transition-colors"
           >
-            About
+            Generate
           </button>
+
+          <!-- About Dropdown -->
+          <div
+            class="relative"
+            @mouseenter="showAboutDesktopDropdown = true"
+            @mouseleave="showAboutDesktopDropdown = false"
+          >
+            <button
+              class="text-gray-300 hover:text-cyan-400 font-semibold transition-colors flex items-center gap-1"
+            >
+              About
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 transition-transform duration-200"
+                :class="{ 'rotate-180': showAboutDesktopDropdown }"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div
+              v-if="showAboutDesktopDropdown"
+              class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f3a]/98 backdrop-blur-xl rounded-xl shadow-2xl border border-cyan-500/30 py-2 z-50"
+            >
+              <button
+                @click="
+                  scrollToSection('choose-our-service');
+                  showAboutDesktopDropdown = false;
+                "
+                class="w-full text-left px-4 py-3 text-gray-300 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all flex items-center gap-2"
+              >
+                <span class="font-medium">Choose Our Service</span>
+              </button>
+              <button
+                @click="
+                  scrollToSection('why-choose-us');
+                  showAboutDesktopDropdown = false;
+                "
+                class="w-full text-left px-4 py-3 text-gray-300 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all flex items-center gap-2"
+              >
+                <span class="font-medium">Why Choose AI Trip Planner</span>
+              </button>
+              <button
+                @click="
+                  scrollToSection('guest-reviews');
+                  showAboutDesktopDropdown = false;
+                "
+                class="w-full text-left px-4 py-3 text-gray-300 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all flex items-center gap-2"
+              >
+                <span class="font-medium">Guest Reviews</span>
+              </button>
+            </div>
+          </div>
+
           <button
             @click="scrollToSection('contact')"
             class="text-gray-300 hover:text-cyan-400 font-semibold transition-colors"
@@ -136,18 +192,20 @@
           >
             📊 Statistics
           </button>
-          <NuxtLink to="/plan-trip" @click="showMobileMenu = false">
-            <button
-              :class="[
-                'w-full px-5 py-3.5 rounded-xl font-semibold text-left transition-all',
-                $route.path === '/plan-trip'
-                  ? 'bg-gradient-to-r from-green-400 to-emerald-500 text-white shadow-lg shadow-green-500/30'
-                  : 'text-gray-300 hover:bg-gradient-to-r hover:from-green-400/20 hover:to-emerald-500/20 hover:text-white',
-              ]"
-            >
-              Generate
-            </button>
-          </NuxtLink>
+          <button
+            @click="
+              scrollToSection('ai-trip-builder');
+              showMobileMenu = false;
+            "
+            :class="[
+              'w-full px-5 py-3.5 rounded-xl font-semibold text-left transition-all',
+              activeNav === 'ai-trip-builder'
+                ? 'bg-gradient-to-r from-green-400 to-emerald-500 text-white shadow-lg shadow-green-500/30'
+                : 'text-gray-300 hover:bg-gradient-to-r hover:from-green-400/20 hover:to-emerald-500/20 hover:text-white',
+            ]"
+          >
+            🎯 Generate
+          </button>
 
           <!-- About Us with Dropdown -->
           <div>
@@ -259,6 +317,7 @@ import { ref } from "vue";
 
 const showMobileMenu = ref(false);
 const showAboutDropdown = ref(false);
+const showAboutDesktopDropdown = ref(false);
 const activeNav = ref("hero");
 
 const scrollToSection = (section) => {

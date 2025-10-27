@@ -14,27 +14,15 @@
             class="flex items-center space-x-2 sm:space-x-3 cursor-pointer group"
           >
             <div class="relative">
-              <div
-                class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg sm:rounded-xl blur-lg opacity-50 group-hover:opacity-70 transition-opacity"
-              ></div>
-              <div
-                class="relative bg-gradient-to-br from-cyan-500 via-blue-500 to-indigo-600 p-2.5 sm:p-3 rounded-lg sm:rounded-xl shadow-2xl transform group-hover:scale-110 transition-all duration-300"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 sm:h-6 sm:w-6 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"
-                  />
-                </svg>
-              </div>
+              <img
+                src="/images/Ai-powerd-owl.png"
+                alt="AI Trip Planner Logo"
+                class="h-10 w-10 sm:h-12 sm:w-12 object-contain transform group-hover:scale-105 transition-all duration-300"
+              />
             </div>
             <div>
               <h1
-                class="text-base sm:text-xl lg:text-2xl font-bold text-white group-hover:text-cyan-200 transition-colors"
+                class="text-base sm:text-xl lg:text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent"
               >
                 AI Trip Planner
               </h1>

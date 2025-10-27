@@ -34,22 +34,19 @@
 
       <!-- Sign Up Form -->
       <div
-        class="backdrop-blur-md bg-[#2a2d4a]/80 rounded-2xl shadow-2xl p-4 sm:p-6 border border-white/10"
+        class="backdrop-blur-md bg-[#2a2d4a]/80 rounded-2xl shadow-2xl p-4 sm:p-5 border border-white/10"
       >
         <div class="text-center mb-3 sm:mb-4">
-          <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">
+          <h1 class="text-lg sm:text-xl md:text-2xl font-bold text-white mb-1">
             Create Account
           </h1>
-          <p class="text-gray-300 text-xs sm:text-sm">
-            Start your travel journey today
-          </p>
+          <p class="text-gray-300 text-xs">Start your travel journey today</p>
         </div>
 
-        <form @submit.prevent="handleSignUp" class="space-y-2.5 sm:space-y-3">
+        <form @submit.prevent="handleSignUp" class="space-y-2 sm:space-y-2.5">
           <!-- Name -->
           <div>
-            <label
-              class="block text-white font-medium mb-2 text-sm sm:text-base"
+            <label class="block text-white font-medium mb-1 text-xs sm:text-sm"
               >Full Name</label
             >
             <input
@@ -57,14 +54,13 @@
               type="text"
               required
               placeholder="Enter your full name"
-              class="w-full px-4 py-3 sm:py-3.5 bg-white/95 border-2 border-transparent focus:border-cyan-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500/30 text-gray-900 placeholder-gray-500 text-sm sm:text-base transition-all"
+              class="w-full px-3 py-2 sm:py-2.5 bg-white/95 border-2 border-transparent focus:border-cyan-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500/30 text-gray-900 placeholder-gray-500 text-sm transition-all"
             />
           </div>
 
           <!-- Email -->
           <div>
-            <label
-              class="block text-white font-medium mb-2 text-sm sm:text-base"
+            <label class="block text-white font-medium mb-1 text-xs sm:text-sm"
               >Email</label
             >
             <input
@@ -72,14 +68,13 @@
               type="email"
               required
               placeholder="Enter your email"
-              class="w-full px-4 py-3 sm:py-3.5 bg-white/95 border-2 border-transparent focus:border-cyan-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500/30 text-gray-900 placeholder-gray-500 text-sm sm:text-base transition-all"
+              class="w-full px-3 py-2 sm:py-2.5 bg-white/95 border-2 border-transparent focus:border-cyan-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500/30 text-gray-900 placeholder-gray-500 text-sm transition-all"
             />
           </div>
 
           <!-- Password -->
           <div>
-            <label
-              class="block text-white font-medium mb-2 text-sm sm:text-base"
+            <label class="block text-white font-medium mb-1 text-xs sm:text-sm"
               >Password</label
             >
             <input
@@ -87,14 +82,13 @@
               type="password"
               required
               placeholder="Create a password"
-              class="w-full px-4 py-3 sm:py-3.5 bg-white/95 border-2 border-transparent focus:border-cyan-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500/30 text-gray-900 placeholder-gray-500 text-sm sm:text-base transition-all"
+              class="w-full px-3 py-2 sm:py-2.5 bg-white/95 border-2 border-transparent focus:border-cyan-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500/30 text-gray-900 placeholder-gray-500 text-sm transition-all"
             />
           </div>
 
           <!-- Confirm Password -->
           <div>
-            <label
-              class="block text-white font-medium mb-2 text-sm sm:text-base"
+            <label class="block text-white font-medium mb-1 text-xs sm:text-sm"
               >Confirm Password</label
             >
             <input
@@ -102,20 +96,20 @@
               type="password"
               required
               placeholder="Confirm your password"
-              class="w-full px-4 py-3 sm:py-3.5 bg-white/95 border-2 border-transparent focus:border-cyan-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500/30 text-gray-900 placeholder-gray-500 text-sm sm:text-base transition-all"
+              class="w-full px-3 py-2 sm:py-2.5 bg-white/95 border-2 border-transparent focus:border-cyan-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500/30 text-gray-900 placeholder-gray-500 text-sm transition-all"
             />
           </div>
 
           <!-- Terms -->
           <label
-            class="flex items-start space-x-2 text-gray-300 cursor-pointer"
+            class="flex items-start space-x-2 text-gray-300 cursor-pointer pt-1"
           >
             <input
               type="checkbox"
               required
-              class="w-4 h-4 rounded mt-1 accent-cyan-500"
+              class="w-3.5 h-3.5 rounded mt-0.5 accent-cyan-500"
             />
-            <span class="text-xs sm:text-sm"
+            <span class="text-xs"
               >I agree to the Terms of Service and Privacy Policy</span
             >
           </label>
@@ -123,36 +117,36 @@
           <!-- Submit Button -->
           <button
             type="submit"
-            class="w-full py-3 sm:py-3.5 md:py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-xl shadow-2xl shadow-cyan-500/20 transition-all duration-300 transform hover:scale-[1.02] text-sm sm:text-base mt-2"
+            class="w-full py-2.5 sm:py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-lg shadow-xl shadow-cyan-500/20 transition-all duration-300 transform hover:scale-[1.02] text-sm mt-2"
           >
             Create Account
           </button>
         </form>
 
         <!-- Divider -->
-        <div class="relative my-3">
+        <div class="relative my-2.5 sm:my-3">
           <div class="absolute inset-0 flex items-center">
             <div class="w-full border-t border-white/20"></div>
           </div>
           <div class="relative flex justify-center text-xs">
-            <span class="px-3 bg-[#2a2d4a] text-gray-400"
+            <span class="px-2.5 bg-[#2a2d4a] text-gray-400"
               >Or continue with</span
             >
           </div>
         </div>
 
         <!-- Social Login -->
-        <div class="grid grid-cols-2 gap-2.5 sm:gap-3 mb-3">
+        <div class="grid grid-cols-2 gap-2 sm:gap-2.5 mb-2.5">
           <button
-            class="flex items-center justify-center space-x-1.5 py-2 bg-white/10 hover:bg-white/20 rounded-xl transition-all border border-white/20"
+            class="flex items-center justify-center space-x-1.5 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-all border border-white/20"
           >
-            <span class="text-base sm:text-lg">🔍</span>
+            <span class="text-sm sm:text-base">🔍</span>
             <span class="text-white font-medium text-xs">Google</span>
           </button>
           <button
-            class="flex items-center justify-center space-x-1.5 py-2 bg-white/10 hover:bg-white/20 rounded-xl transition-all border border-white/20"
+            class="flex items-center justify-center space-x-1.5 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-all border border-white/20"
           >
-            <span class="text-base sm:text-lg">📘</span>
+            <span class="text-sm sm:text-base">📘</span>
             <span class="text-white font-medium text-xs">Facebook</span>
           </button>
         </div>

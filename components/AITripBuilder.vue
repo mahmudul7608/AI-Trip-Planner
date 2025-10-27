@@ -1,5 +1,6 @@
 <template>
   <div
+    id="ai-trip-builder"
     class="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#1a1f3a] via-[#2d3561] to-[#1e2542]"
   >
     <div class="max-w-6xl mx-auto">

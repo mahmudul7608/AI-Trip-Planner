@@ -35,10 +35,8 @@
             today!
           </p>
 
-          <!-- CTA Buttons -->
-          <div
-            class="flex flex-col sm:flex-row gap-4 justify-center items-center"
-          >
+          <!-- CTA Button -->
+          <div class="flex justify-center items-center">
             <NuxtLink to="/plan-trip">
               <button
                 class="group px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-full shadow-lg shadow-cyan-500/30 hover:shadow-xl hover:shadow-cyan-500/50 transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
@@ -60,12 +58,6 @@
                 </svg>
               </button>
             </NuxtLink>
-
-            <button
-              class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-full border-2 border-white/30 hover:border-white/50 transition-all duration-300 transform hover:scale-105"
-            >
-              Learn More
-            </button>
           </div>
 
           <!-- Trust Indicators -->

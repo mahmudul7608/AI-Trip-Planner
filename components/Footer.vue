@@ -10,28 +10,23 @@
         <!-- Company Info -->
         <div class="col-span-1 sm:col-span-2 lg:col-span-1">
           <div class="flex items-center gap-2 mb-4">
-            <div
-              class="w-10 h-10 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center"
-            >
-              <span class="text-2xl">✈️</span>
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center">
+              <img
+                src="/images/Ai-powerd-owl.png"
+                alt="AI Trip Planner Logo"
+                class="w-10 h-10 object-contain"
+              />
             </div>
-            <h3 class="text-xl font-bold">AI Trip Planner</h3>
+            <h3
+              class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent"
+            >
+              AI Trip Planner
+            </h3>
           </div>
           <p class="text-gray-400 text-sm mb-4 leading-relaxed">
             Your intelligent travel companion. Plan, explore, and experience the
             world with AI-powered itineraries.
           </p>
-          <!-- Social Links -->
-          <div class="flex gap-3">
-            <a
-              v-for="(social, index) in socials"
-              :key="index"
-              href="#"
-              class="w-9 h-9 bg-white/5 hover:bg-white/10 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 border border-white/10 hover:border-cyan-500/50"
-            >
-              <span class="text-lg">{{ social }}</span>
-            </a>
-          </div>
         </div>
 
         <!-- Quick Links Sections -->
@@ -88,8 +83,6 @@
 
 <script setup>
 import { ref } from "vue";
-
-const socials = ref(["📘", "🐦", "📷", "💼"]);
 
 const footerLinks = ref([
   {
