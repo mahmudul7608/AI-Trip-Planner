@@ -8,7 +8,7 @@ A beautiful **AI-powered trip planning** application built with **Nuxt 3** and *
 
 #Live Link : https://new-ai-trip-planner-web.netlify.app/
 
-## 🚀 Features
+## Features
 
 * Generate itinerary suggestions using AI prompts
 * Search and filter destinations
@@ -18,7 +18,7 @@ A beautiful **AI-powered trip planning** application built with **Nuxt 3** and *
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 * **Framework:** Nuxt 3
 * **Styling:** Tailwind CSS
@@ -27,7 +27,7 @@ A beautiful **AI-powered trip planning** application built with **Nuxt 3** and *
 
 ---
 
-## ⚙️ Setup
+##  Setup
 
 Clone the repo and install dependencies:
 
@@ -48,7 +48,7 @@ OPENAI_API_KEY=sk-xxxx
 
 ---
 
-## 🧑‍💻 Development
+##  Development
 
 Run the development server locally (hot reload):
 
@@ -62,7 +62,7 @@ Open: `http://localhost:3000`
 
 ---
 
-## 📦 Production
+##  Production
 
 Build for production:
 
@@ -84,7 +84,7 @@ For deployment, check the official Nuxt 3 docs: `https://nuxt.com/docs/getting-s
 
 ---
 
-## 🧩 Project Structure (recommended)
+##  Project Structure (recommended)
 
 ```
 / — root
@@ -100,7 +100,7 @@ For deployment, check the official Nuxt 3 docs: `https://nuxt.com/docs/getting-s
 
 ---
 
-## ✅ Helpful Scripts
+##  Helpful Scripts
 
 ```json
 {
@@ -113,7 +113,7 @@ For deployment, check the official Nuxt 3 docs: `https://nuxt.com/docs/getting-s
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please open issues for bugs or feature requests and create PRs for changes.
 
@@ -126,20 +126,8 @@ Suggested workflow:
 
 ---
 
-## 📄 License
+##  License
 
 Specify your license here (MIT, Apache-2.0, etc.). Example: `MIT`.
 
 ---
-
-## ✉️ Contact
-
-Mahmudul Hasan — add your contact or social links here (GitHub, LinkedIn, portfolio).
-
----
-
-*If you want, I can also:*
-
-* Provide a Bangla version of this README
-* Add a detailed `env.example` and a `.gitignore`
-* Create a `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, or `LICENSE`
