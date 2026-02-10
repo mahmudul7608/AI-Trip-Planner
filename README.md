@@ -5,7 +5,6 @@
 A beautiful **AI-powered trip planning** application built with **Nuxt 3** and **Tailwind CSS**  lightweight, responsive, and designed for real-world trip creation.
 
 ---
-
 #Live Link : https://new-ai-trip-planner-web.netlify.app/
 
 ## Features
